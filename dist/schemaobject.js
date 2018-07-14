@@ -1340,7 +1340,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     var proxy = this[_privateKey]._this = new Proxy(this, {
                         // Ensure only public keys are shown.
                         ownKeys: function ownKeys(target) {
-                            return Object.keys(_this23.toObject());
+                            var obj = _this23.toObject();
+                            if (obj === undefined || obj === null) obj = {};
+                            return Object.keys(obj);
                         },
 
                         // Return keys to iterate.
