@@ -1,3 +1,6 @@
+UNMAINTAINED
+==================
+
 Schema Object [![Build Status](https://travis-ci.org/scotthovestadt/schema-object.png?branch=master)](https://travis-ci.org/scotthovestadt/schema-object)
 ==================
 
@@ -481,7 +484,7 @@ With keys ignore case off (default):
 var User = new SchemaObject({
   firstName: String
 }, {
-  keyIgnoreCase: false
+  keysIgnoreCase: false
 });
 
 var user = new User();
@@ -496,7 +499,7 @@ With keys ignore case on:
 var User = new SchemaObject({
   firstName: String
 }, {
-  keyIgnoreCase: true
+  keysIgnoreCase: true
 });
 
 var user = new User();
