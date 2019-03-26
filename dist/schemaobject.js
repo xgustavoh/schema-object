@@ -1001,7 +1001,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             _private._properties = properties;
 
             // Normalize our own properties.
-            if (properties.arrayType) {
+            if (!!properties && "arrayType" in properties) {
                 properties.arrayType = normalizeProperties.call(self, properties.arrayType);
             }
             return _this20;
